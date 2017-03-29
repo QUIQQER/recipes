@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+    <groups name="quiqqer/recipes" datatype="php,js">
+        <locale name="site.panel.category.title">
+            <de><![CDATA[Rezepten]]></de>
+            <en><![CDATA[Recipes]]></en>
+        </locale>
+
+        <!--<locale name="quiqqer/recipes:types/tag-listing.title">
+            <de><![CDATA[Tag-Liste]]></de>
+            <en><![CDATA[Tag List]]></en>
+        </locale>
+        <locale name="quiqqer/tags:types/tag-listing.description" html="true">
+            <de><![CDATA[
+            Dieser Seitentyp listet alle Tags inkl. Beschreibung und zugehörigem Icon in einer Liste auf.
+            Klickt der Nutzer auf einen Tag, landet er auf einer Suchergebnis-Seite mit allen Seiten, denen dieser Tag zugewiesen ist.
+            ]]></de>
+            <en><![CDATA[
+            This page type lists all tags including description and associated icon in a list.
+            If the user clicks on a tag, he ends up on a search result page with all pages to which this tag is assigned.
+            ]]></en>
+        </locale>
+        <locale name="quiqqer/tags:types/tag-search.title">
+            <de><![CDATA[Tag-Suche]]></de>
+            <en><![CDATA[Tag Search]]></en>
+        </locale>
+        <locale name="quiqqer/tags:types/tag-search.description" html="true">
+            <de><![CDATA[
+            Über die Tag-Suche kann der Nutzer Inhalte zu verschiedenen relevanten Themen finden, ohne selbst Suchbegriffe eingeben zu müssen.
+            Diese Themen können als Tags vom Seitenbetreiber nach Belieben für jede Unterseite festgelegt werden.
+            Der Nutzer kann die Tag-Suche sowohl mit einem als auch mit mehreren ausgewählten Tags ausführen, um die Ergebnisse genauer einzugrenzen.
+            In der Ergebnisliste werden alle Unterseiten angezeigt, die intern mit den gesuchten Tags markiert sind.
+            Die Tag-Suche lässt sich in den Einstellungen durch den Seitenbetreiber konfigurieren,
+            um beispielsweise bestimmte Tags vorauszuwählen oder die Darstellung anzupassen.
+            ]]></de>
+            <en><![CDATA[
+            Through the tag search the user can find content on various relevant topics without having to enter search terms themselves.
+            These topics can be defined as tags by the site operator at will for each bottom side.
+            The user can perform the tag search with both one and several selected tags to further narrow down the results.
+            In the list of results all sub-pages are marked internally with the searched tags.
+            The tag search can be configured in the settings by the page operator,
+            For example, to pre-select certain tags or to adjust the display.
+            ]]></en>
+        </locale>-->
+    </groups>
+</locales>

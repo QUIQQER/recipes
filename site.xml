@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+
+    <!-- extend every panel -->
+    <window>
+        <tab name="quiqqer.recipes">
+            <text>
+                <locale group="quiqqer/recipes" var="site.panel.category.title"/>
+            </text>
+            <image>fa fa-edit</image>
+            <onload require="package/quiqqer/recipes/bin/Recipes"></onload>
+        </tab>
+    </window>
+
+</site>
