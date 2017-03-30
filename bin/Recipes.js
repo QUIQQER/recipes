@@ -7,11 +7,16 @@
 define('package/quiqqer/recipes/bin/Recipes', [
 
     'qui/controls/Control',
-    'qui/controls/elements/FormList'
+    'Locale',
+    'Mustache',
 
-], function (QUIControl, QUIFormList)
+    'text!package/quiqqer/recipes/bin/Recipes.Settings.html'
+
+], function (QUIControl, QUILocale, Mustache, templateSiteSettings)
 {
     "use strict";
+
+    var group = 'quiqqer/recipes';
 
     return new Class({
 
@@ -26,8 +31,6 @@ define('package/quiqqer/recipes/bin/Recipes', [
         {
             this.parent(options);
 
-
-
         },
 
         /**
@@ -35,10 +38,20 @@ define('package/quiqqer/recipes/bin/Recipes', [
          *
          * @return {HTMLElement}
          */
-        create: function () {
+        create: function ()
+        {
             this.$Elm = new Element('div', {
                 'class': 'qui-recipes',
-                html   : '<div>super div!</div>'
+                html   : Mustache.render(templateSiteSettings, {
+                    RecipesSettingsTitle : QUILocale.get(group, 'site.table.settings.title'),
+                    RecipesTitle         : QUILocale.get(group, 'site.table.settings.recipes.title'),
+                    RecipesSubtitle      : QUILocale.get(group, 'site.table.settings.recipes.subtitle'),
+                    RecipesImg           : QUILocale.get(group, 'site.table.settings.recipes.img'),
+                    RecipesPersonsNumber : QUILocale.get(group, 'site.table.settings.recipes.personsNumber'),
+                    RecipesComponents    : QUILocale.get(group, 'site.table.settings.recipes.components'),
+                    RecipesComponentsDesc: QUILocale.get(group, 'site.table.settings.recipes.components.desc'),
+                    RecipesPreparation   : QUILocale.get(group, 'site.table.settings.recipes.preparation')
+                })
             });
 
             return this.$Elm;

@@ -4,7 +4,51 @@
         <locale name="site.panel.category.title">
             <de><![CDATA[Rezepten]]></de>
             <en><![CDATA[Recipes]]></en>
+            <pl><![CDATA[Recepty]]></pl>
         </locale>
+
+
+        <locale name="site.table.settings.title">
+            <de><![CDATA[Rezepten]]></de>
+            <en><![CDATA[Recipes]]></en>
+            <pl><![CDATA[Recepty]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.title">
+            <de><![CDATA[Titel]]></de>
+            <en><![CDATA[Title]]></en>
+            <pl><![CDATA[Tytuł]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.subtitle">
+            <de><![CDATA[Untertitel (optional)]]></de>
+            <en><![CDATA[Sub title (optional)]]></en>
+            <pl><![CDATA[Podtytuł (optionalnie)]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.img">
+            <de><![CDATA[Bild]]></de>
+            <en><![CDATA[Image]]></en>
+            <pl><![CDATA[Zdjęcie]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.personsNumber" html="true">
+            <de><![CDATA[Rezept-Prefix, z. B. "Für 4 Personen"]]></de>
+            <en><![CDATA[Recipes prefix, for example "For 6 persons"]]></en>
+            <pl><![CDATA[Przedrostek recepty, na przyklad "Danie dla 6 osob"]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.components">
+            <de><![CDATA[Zutaten]]></de>
+            <en><![CDATA[Components]]></en>
+            <pl><![CDATA[Składniki]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.components.desc">
+            <de><![CDATA[Ein Zutat pro zeile]]></de>
+            <en><![CDATA[One component pro line]]></en>
+            <pl><![CDATA[Kolejne składniki rozdzielić enterem]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.preparation">
+            <de><![CDATA[Zuberaitung]]></de>
+            <en><![CDATA[Preparation]]></en>
+            <pl><![CDATA[Przygotowanie]]></pl>
+        </locale>
+
 
         <!--<locale name="quiqqer/recipes:types/tag-listing.title">
             <de><![CDATA[Tag-Liste]]></de>

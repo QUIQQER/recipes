@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
+    <attributes>
+        <attribute>quiqqer.recipes.title</attribute>
+        <attribute>quiqqer.recipes.subtitle</attribute>
+        <attribute>quiqqer.recipes.img</attribute>
+        <attribute>quiqqer.recipes.personsNumber</attribute>
+        <attribute>quiqqer.recipes.components</attribute>
+        <attribute>quiqqer.recipes.preparation</attribute>
+    </attributes>
 
     <!-- extend every panel -->
     <window>
@@ -8,7 +16,7 @@
                 <locale group="quiqqer/recipes" var="site.panel.category.title"/>
             </text>
             <image>fa fa-edit</image>
-            <onload require="package/quiqqer/recipes/bin/Recipes"></onload>
+            <template>OPT_DIR/quiqqer/recipes/template/Recipes.html</template>
         </tab>
     </window>
 

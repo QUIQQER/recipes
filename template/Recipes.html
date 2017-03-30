@@ -1,0 +1,60 @@
+<form class="qui-site-data">
+<table class="data-table">
+    <thead>
+    <tr>
+        <th colspan="2">
+            {locale group="quiqqer/recipes" var="site.table.settings.title"}
+        </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr class="odd">
+        <td style="width: 210px;">
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.title"}
+        </td>
+        <td><input type="text" name="quiqqer.recipes.title"/></td>
+    </tr>
+    <tr class="even">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.subtitle"}
+        </td>
+        <td><input type="text" name="quiqqer.recipes.subtitle" /></td>
+    </tr>
+    <tr class="odd">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.img"}
+        </td>
+        <td><input type="text" name="quiqqer.recipes.img" class="media-image"/></td>
+    </tr>
+    <tr class="even">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.personsNumber"}
+        </td>
+        <td><input type="text" name="quiqqer.recipes.personsNumber" /></td>
+    </tr>
+    <tr class="odd">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.components"}
+        </td>
+        <td>
+            <textarea name="quiqqer.recipes.components" style="width: 100%; height: 150px;"></textarea>
+        </td>
+    </tr>
+    <tr class="odd">
+        <td class="width: 100%;" colspan="2">
+            <div class="field-container-item-desc">
+                {locale group="quiqqer/recipes" var="site.table.settings.recipes.components.desc"}
+            </div>
+        </td></tr>
+    <tr class="even">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.preparation"}
+        </td>
+        <td>
+            <textarea name="quiqqer.recipes.preparation" style="width: 100%; height: 150px;"></textarea>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>
