@@ -2,7 +2,7 @@
     "name" : "quiqqer/recipes",
     "type" : "quiqqer-module",
     "description" : "QUIQQER Recipes",
-    "version" : "dev-dev",
+    "version" : "dev-master",
     "license" : "GPL-3.0+",
 
     "authors" : [{
