@@ -2,21 +2,20 @@
 <locales>
     <groups name="quiqqer/recipes" datatype="php,js">
         <locale name="site.panel.category.title">
-            <de><![CDATA[Rezepten]]></de>
-            <en><![CDATA[Recipes]]></en>
-            <pl><![CDATA[Recepty]]></pl>
+            <de><![CDATA[Rezept]]></de>
+            <en><![CDATA[Recipe]]></en>
+            <pl><![CDATA[Recepta]]></pl>
         </locale>
-
 
         <locale name="site.table.settings.title">
-            <de><![CDATA[Rezepten]]></de>
-            <en><![CDATA[Recipes]]></en>
-            <pl><![CDATA[Recepty]]></pl>
+            <de><![CDATA[Rezept]]></de>
+            <en><![CDATA[Recipe]]></en>
+            <pl><![CDATA[Recepta]]></pl>
         </locale>
         <locale name="site.table.settings.recipes.title">
-            <de><![CDATA[Titel]]></de>
-            <en><![CDATA[Title]]></en>
-            <pl><![CDATA[Tytuł]]></pl>
+            <de><![CDATA[Titel (Gerichtsname)]]></de>
+            <en><![CDATA[Title (name of the meal)]]></en>
+            <pl><![CDATA[Tytuł (nazwa dania)]]></pl>
         </locale>
         <locale name="site.table.settings.recipes.subtitle">
             <de><![CDATA[Untertitel (optional)]]></de>
@@ -28,25 +27,40 @@
             <en><![CDATA[Image]]></en>
             <pl><![CDATA[Zdjęcie]]></pl>
         </locale>
-        <locale name="site.table.settings.recipes.personsNumber" html="true">
-            <de><![CDATA[Rezept-Prefix, z. B. "Für 4 Personen"]]></de>
-            <en><![CDATA[Recipes prefix, for example "For 6 persons"]]></en>
-            <pl><![CDATA[Przedrostek recepty, na przyklad "Danie dla 6 osob"]]></pl>
+        <locale name="site.table.settings.recipes.time">
+            <de><![CDATA[Vorbereitungszeit]]></de>
+            <en><![CDATA[Prep time]]></en>
+            <pl><![CDATA[Czas przygotowania]]></pl>
         </locale>
-        <locale name="site.table.settings.recipes.components">
+        <locale name="site.table.settings.recipes.serves">
+            <de><![CDATA[Portionen]]></de>
+            <en><![CDATA[Serves]]></en>
+            <pl><![CDATA[Porcje]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.extraInfo">
+            <de><![CDATA[Zusatzinformationen, z.B. "Für eine Blechgröße 29x42cm".]]></de>
+            <en><![CDATA[Extra info, for example "For baking tray size 10x14.5-inch".]]></en>
+            <pl><![CDATA[Dodatkowe informacje, na przyklad "Blacha o wymiarach 29x42cm".]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.ingredients">
             <de><![CDATA[Zutaten]]></de>
-            <en><![CDATA[Components]]></en>
+            <en><![CDATA[Ingredients]]></en>
             <pl><![CDATA[Składniki]]></pl>
         </locale>
         <locale name="site.table.settings.recipes.components.desc">
-            <de><![CDATA[Ein Zutat pro zeile]]></de>
-            <en><![CDATA[One component pro line]]></en>
+            <de><![CDATA[Eine Zutat pro Zeile]]></de>
+            <en><![CDATA[One ingredient per line]]></en>
             <pl><![CDATA[Kolejne składniki rozdzielić enterem]]></pl>
         </locale>
         <locale name="site.table.settings.recipes.preparation">
-            <de><![CDATA[Zuberaitung]]></de>
+            <de><![CDATA[Zubereitung]]></de>
             <en><![CDATA[Preparation]]></en>
             <pl><![CDATA[Przygotowanie]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.notes">
+            <de><![CDATA[Rezept Hinweise]]></de>
+            <en><![CDATA[Additional information]]></en>
+            <pl><![CDATA[Dodatkowe informacje]]></pl>
         </locale>
 
 

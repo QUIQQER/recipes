@@ -29,22 +29,34 @@
     </tr>
     <tr class="even">
         <td>
-            {locale group="quiqqer/recipes" var="site.table.settings.recipes.personsNumber"}
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.time"}
         </td>
-        <td><input type="text" name="quiqqer.recipes.personsNumber" /></td>
+        <td><input type="text" name="quiqqer.recipes.time" /></td>
     </tr>
     <tr class="odd">
         <td>
-            {locale group="quiqqer/recipes" var="site.table.settings.recipes.components"}
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.serves"}
+        </td>
+        <td><input type="text" name="quiqqer.recipes.serves" /></td>
+    </tr>
+    <tr class="even">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.extraInfo"}
+        </td>
+        <td><input type="text" name="quiqqer.recipes.extraInfo" /></td>
+    </tr>
+    <tr class="odd">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.ingredients"}
         </td>
         <td>
-            <textarea name="quiqqer.recipes.components" style="width: 100%; height: 150px;"></textarea>
+            <textarea name="quiqqer.recipes.ingredients" style="width: 100%; height: 150px;"></textarea>
         </td>
     </tr>
     <tr class="odd">
         <td class="width: 100%;" colspan="2">
             <div class="field-container-item-desc">
-                {locale group="quiqqer/recipes" var="site.table.settings.recipes.components.desc"}
+                {locale group="quiqqer/recipes" var="site.table.settings.recipes.ingredients.desc"}
             </div>
         </td></tr>
     <tr class="even">
@@ -53,6 +65,14 @@
         </td>
         <td>
             <textarea name="quiqqer.recipes.preparation" style="width: 100%; height: 150px;"></textarea>
+        </td>
+    </tr>
+    <tr class="eoddven">
+        <td>
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.notes"}
+        </td>
+        <td>
+            <textarea name="quiqqer.recipes.notes" style="width: 100%; height: 150px;"></textarea>
         </td>
     </tr>
     </tbody>

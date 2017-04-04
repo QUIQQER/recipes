@@ -4,9 +4,12 @@
         <attribute>quiqqer.recipes.title</attribute>
         <attribute>quiqqer.recipes.subtitle</attribute>
         <attribute>quiqqer.recipes.img</attribute>
-        <attribute>quiqqer.recipes.personsNumber</attribute>
-        <attribute>quiqqer.recipes.components</attribute>
+        <attribute>quiqqer.recipes.time</attribute>
+        <attribute>quiqqer.recipes.serves</attribute>
+        <attribute>quiqqer.recipes.extraInfo</attribute>
+        <attribute>quiqqer.recipes.ingredients</attribute>
         <attribute>quiqqer.recipes.preparation</attribute>
+        <attribute>quiqqer.recipes.notes</attribute>
     </attributes>
 
     <!-- extend every panel -->
