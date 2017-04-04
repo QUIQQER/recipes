@@ -47,7 +47,7 @@
             <en><![CDATA[Ingredients]]></en>
             <pl><![CDATA[Składniki]]></pl>
         </locale>
-        <locale name="site.table.settings.recipes.components.desc">
+        <locale name="site.table.settings.recipes.ingredients.desc">
             <de><![CDATA[Eine Zutat pro Zeile]]></de>
             <en><![CDATA[One ingredient per line]]></en>
             <pl><![CDATA[Kolejne składniki rozdzielić enterem]]></pl>
