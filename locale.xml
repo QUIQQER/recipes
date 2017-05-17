@@ -32,6 +32,11 @@
             <en><![CDATA[Prep time]]></en>
             <pl><![CDATA[Czas przygotowania]]></pl>
         </locale>
+        <locale name="site.table.settings.recipes.time.frontend">
+            <de><![CDATA[Zeit]]></de>
+            <en><![CDATA[Time]]></en>
+            <pl><![CDATA[Czas]]></pl>
+        </locale>
         <locale name="site.table.settings.recipes.serves">
             <de><![CDATA[Portionen]]></de>
             <en><![CDATA[Serves]]></en>
