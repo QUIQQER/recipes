@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
     <groups name="quiqqer/recipes" datatype="php,js">
+
+        <locale name="package.title">
+            <de><![CDATA[Rezepte für QUIQQER]]></de>
+            <en><![CDATA[Recipes for QUIQQER]]></en>
+            <pl><![CDATA[Recepty dla QUIQQER]]></pl>
+        </locale>
+        <locale name="package.description">
+            <de><![CDATA[
+                    <p>Der Rezepten-Plugin ermöglichst Ihnen auf einfache Art und Weise Ihre <strong>Koch-Idee</strong> im Internet zu präsentieren. Das eingebaute Template sorgt für ansprechendes Aussehen jeder Ihrer Rezepte.</p>
+<p>Nach der Installation dieses Plugins werden Ihre Seiten um weiteren Tab erweitert. Hier können Sie schnell eine neune Rezept hinzufügen. Mögliche Feldern sind:</p>
+
+<ul>
+<li>Gerichtsname</li>
+<li>Untertitel</li>
+<li>Bild</li>
+<li>Portionen<li>
+<li>Zusatzinformationen</li>
+<li>Zutaten auflisten</li>
+<li>Zubereitung</li>
+<li>Rezept Hinweise</li>
+</ul>
+
+<p>Selbstverständlich können Sie weiterhin weiter Inhalte beliebig hinzufügen.</p>
+                ]]></de>
+            <en><![CDATA[No description at the moment]]></en>
+            <pl><![CDATA[Na chwilę obecną brak opisu]]></pl>
+        </locale>
+
+
         <locale name="site.panel.category.title">
             <de><![CDATA[Rezept]]></de>
             <en><![CDATA[Recipe]]></en>
