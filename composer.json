@@ -1,9 +1,9 @@
 {
     "name" : "quiqqer/recipes",
     "type" : "quiqqer-module",
-    "description" : "QUIQQER Recipes",
+    "description" : "QUIQQER extension for managing your recipes.",
     "version" : "dev-dev",
-    "license" : "GPL-3.0+",
+    "license" : "CC BY 3.0",
 
     "authors" : [{
         "name": "Michael Danielczok",
