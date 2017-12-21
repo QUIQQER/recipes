@@ -1,0 +1,15 @@
+.recipes-title.content-header {
+    text-align: left;
+    padding-bottom: 1em;
+    padding-top: 0;
+}
+
+.recipes-entry-time {
+    display: inline-block;
+    border-top: 1px solid #eee;
+    width: auto;
+    color: #aaa;
+    padding-bottom: 2em;
+    font-style: italic;
+    font-size: 12px;
+}

@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
     <groups name="quiqqer/recipes" datatype="php,js">
+
+        <locale name="package.title">
+            <de><![CDATA[QUIQQER - Rezepte]]></de>
+            <en><![CDATA[QUIQQER - Recipes]]></en>
+            <pl><![CDATA[QUIQQER - Recepty]]></pl>
+        </locale>
+        <locale name="package.description">
+            <de><![CDATA[Der Rezepten-Plugin ermöglichst Ihnen auf einfache Art und Weise Ihre Koch-Idee im Internet zu präsentieren.]]></de>
+            <en><![CDATA[The extension allows you to create and manage your recipes. After you have installed it, the sites panel of will be extended. Here you can add a new recipe.]]></en>
+            <pl><![CDATA[Rozszerzenie umożliwia tworzenie i zarządzanie przepisami. Po installacji do panelu każdej strony zostanie dodana nowa pozycja. W tym miejscu możesz tworzyć nowe przepisy, które później ukażą się pod główną treścią danej strony.]]></pl>
+        </locale>
+
+
+        <locale name="admin.types.recipes.entry">
+            <de><![CDATA[Eintrag mit Rezept]]></de>
+            <en><![CDATA[Recipe entry]]></en>
+            <pl><![CDATA[Wpis z receptą]]></pl>
+        </locale>
+        <locale name="admin.types.recipes.entry.desc">
+            <de><![CDATA[Seitentyp zum Anzeigen des gespeicherten Rezeptes unter dem eigentlichem Inhalt.]]></de>
+            <en><![CDATA[Page type to display the saved recipe under the actual content.]]></en>
+            <pl><![CDATA[Typ strony, który umożliwia wyświetlenie recepty pod główną treścią strony.]]></pl>
+        </locale>
+        <locale name="quiqqer/recipes:types/entry.title">
+            <de><![CDATA[Eintrag mit Rezept]]></de>
+            <en><![CDATA[Recipe entry]]></en>
+            <pl><![CDATA[Wpis z receptą]]></pl>
+        </locale>
+        <locale name="quiqqer/recipes:types/entry.description">
+            <de><![CDATA[Seitentyp zum Anzeigen des gespeicherten Rezeptes unter dem eigentlichem Inhalt.]]></de>
+            <en><![CDATA[Page type to display the saved recipe under the actual content.]]></en>
+            <pl><![CDATA[Typ strony, który umożliwia wyświetlenie recepty pod główną treścią strony.]]></pl>
+        </locale>
+
+
+
         <locale name="site.panel.category.title">
             <de><![CDATA[Rezept]]></de>
             <en><![CDATA[Recipe]]></en>
@@ -31,6 +67,11 @@
             <de><![CDATA[Vorbereitungszeit]]></de>
             <en><![CDATA[Prep time]]></en>
             <pl><![CDATA[Czas przygotowania]]></pl>
+        </locale>
+        <locale name="site.table.settings.recipes.time.frontend">
+            <de><![CDATA[Zeit]]></de>
+            <en><![CDATA[Time]]></en>
+            <pl><![CDATA[Czas]]></pl>
         </locale>
         <locale name="site.table.settings.recipes.serves">
             <de><![CDATA[Portionen]]></de>

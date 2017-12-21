@@ -1,7 +1,11 @@
+![QUIQQER Recipes](bin/images/Readme.jpg)
 
 Recipes Plugin
-========
-Erweiterung zum Managen der Rezepten.
+==============
+
+QUIQQER extension for managing your recipes.
+After you have installed it, the sites panel of will be extended. Here you can add a new recipe.
+
 
 Paketname:
 
@@ -11,15 +15,16 @@ Paketname:
 Features
 --------
 
-- (im Moment keine)
+- Extends the blog entry and put new tab (recipe).
+- Special fields for parts of your recipe (components, preparation time, etc).
 
 Installation
 ------------
 
-Der Paketname ist: quiqqer/recipes
+The package name is: quiqqer/recipes
 
 
-Mitwirken
+Contribute
 ----------
 
 - Project: https://dev.quiqqer.com/quiqqer/recipes
@@ -30,9 +35,11 @@ Mitwirken
 Support
 -------
 
-Falls Sie ein Fehler gefunden haben, oder Verbesserungen wünschen,
-dann können Sie gerne an support@pcsg.de eine E-Mail schreiben.
+If you have found a bug or want to make improvements,
+then you can write an e-mail to support@pcsg.de.
 
 
-Lizenz
+License
 -------
+
+CC BY 3.0
