@@ -4,6 +4,7 @@ Recipes Plugin
 ==============
 
 QUIQQER extension for managing your recipes.
+After you have installed it, the sites panel of will be extended. Here you can add a new recipe.
 
 
 Paketname:

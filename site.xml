@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-    <attributes>
-        <attribute>quiqqer.recipes.title</attribute>
-        <attribute>quiqqer.recipes.subtitle</attribute>
-        <attribute>quiqqer.recipes.img</attribute>
-        <attribute>quiqqer.recipes.time</attribute>
-        <attribute>quiqqer.recipes.serves</attribute>
-        <attribute>quiqqer.recipes.extraInfo</attribute>
-        <attribute>quiqqer.recipes.ingredients</attribute>
-        <attribute>quiqqer.recipes.preparation</attribute>
-        <attribute>quiqqer.recipes.notes</attribute>
-    </attributes>
+
+    <!-- schlechte Lösung -->
+    <!-- wenn es Zeit gibt, dann kann man das in neuer Version besser machen -->
+    <attribute>quiqqer.recipes.title</attribute>
+    <attribute>quiqqer.recipes.subtitle</attribute>
+    <attribute>quiqqer.recipes.img</attribute>
+    <attribute>quiqqer.recipes.time</attribute>
+    <attribute>quiqqer.recipes.serves</attribute>
+    <attribute>quiqqer.recipes.extraInfo</attribute>
+    <attribute>quiqqer.recipes.ingredients</attribute>
+    <attribute>quiqqer.recipes.preparation</attribute>
+    <attribute>quiqqer.recipes.notes</attribute>
 
     <!-- extend every panel -->
+    <!-- schlechte Lösung -->
+    <!-- wenn es Zeit gibt, dann kann man das in neuer Version besser machen -->
     <window>
         <tab name="quiqqer.recipes">
             <text>
@@ -22,5 +25,69 @@
             <template>OPT_DIR/quiqqer/recipes/template/Recipes.html</template>
         </tab>
     </window>
+
+    <types>
+        <type type="types/entry" icon="icon-book">
+            <locale group="quiqqer/recipes" var="admin.types.recipes.entry" />
+            <desc>
+                <locale group="quiqqer/recipes" var="admin.types.recipes.entry.desc" />
+            </desc>
+
+            <attributes>
+                <attribute default="enable">quiqqer.settings.blog.entry.comments</attribute>
+                <attribute default="1">quiqqer.settings.blog.entry.dateAndCreator</attribute>
+            </attributes>
+
+            <settings>
+                <category name="blog-entry-settings">
+                    <settings>
+                        <title>
+                            <locale group="quiqqer/blog" var="quiqqer.blog.entry.settings.title" />
+                        </title>
+
+                        <select conf="quiqqer.settings.blog.entry.comments">
+                            <text>
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.comments" />
+                            </text>
+                            <option value="enable">
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.comments.enable" />
+                            </option>
+                            <option value="disable">
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.comments.disable" />
+                            </option>
+                        </select>
+
+                        <select conf="quiqqer.settings.blog.entry.dateAndCreator">
+                            <text>
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.dateAndCreator" />
+                            </text>
+
+                            <option value="showAll">
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.dateAndCreator.showAll"/>
+                            </option>
+                            <option value="showCreator">
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.dateAndCreator.showCreator"/>
+                            </option>
+                            <option value="showDate">
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.dateAndCreator.showDate"/>
+                            </option>
+                            <option value="hide">
+                                <locale group="quiqqer/blog"
+                                        var="quiqqer.settings.blog.entry.dateAndCreator.hide"/>
+                            </option>
+                        </select>
+
+                    </settings>
+                </category>
+            </settings>
+        </type>
+    </types>
 
 </site>

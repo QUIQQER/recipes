@@ -1,0 +1,202 @@
+{if $Site->getAttribute('release_from') &&
+    $Site->getAttribute('release_from') != '0000-00-00 00:00:00'}
+    {assign var=date value=$Site->getAttribute('release_from')}
+{else}
+    {assign var=date value=$Site->getAttribute('c_date')}
+{/if}
+
+<article itemscope itemtype="http://schema.org/BlogPosting"
+         class="blog-entry grid-100 mobile-grid-100 grid-parent content-body"
+>
+    <header class="recipes-title content-header">
+        <h1 itemprop="name">{$Site->getAttribute('title')}</h1>
+    </header>
+    <section class="recipes-entry-time">
+
+            {user id=$Site->getAttribute('c_user') var=User}
+            {t}quiqqer/blog entry.blog.by{/t}
+            <span class="recipes-entry-author"  itemprop="author">
+                {if $User->getId() && $User->getAttribute('firstname')}
+                    {$User->getAttribute('firstname')}
+                {else if $User->getId()}
+                    {$User->getname()}
+                {/if}
+            </span>
+
+            {t}quiqqer/blog entry.blog.on{/t}
+
+            <time datetime="{$date|date_format:"c"}"
+                  itemprop="datePublished"
+            >
+                {locale_date date=$date format="%A, %e. %B %Y"}
+            </time>
+
+
+    </section>
+
+    {*if $Site->getAttribute('image_emotion')}
+    <header class="recipes-image">
+        {image src=$Site->getAttribute('image_emotion') class="header-img"
+                    title=$Site->getAttribute('title')}
+    </header>
+    {/if*}
+
+    {if $Site->getAttribute('content')}
+    <section class="content-body recipes-entry-content grid-100 mobile-grid-100 grid-parent"
+             itemprop="articleBody"
+    >
+        {$Site->getAttribute('content')}
+    </section>
+    {/if}
+
+    {*
+    <!-- Rezepte Erweiterung -->
+    *}
+    {if $Site->getAttribute('quiqqer.recipes.title')}
+    <section class="content-body recipes">
+
+        {if $Site->getAttribute('quiqqer.recipes.img')}
+        <div class="recipes-image">
+            {image src=$Site->getAttribute('quiqqer.recipes.img') class="header-img"
+                        title=$Site->getAttribute('quiqqer.recipes.title')}
+        </div>
+        {/if}
+
+        <header>
+            <h3>{$Site->getAttribute('quiqqer.recipes.title')}</h3>
+                {if $Site->getAttribute('quiqqer.recipes.subtitle')}
+            <span style="font-style: italic;">
+                {$Site->getAttribute('quiqqer.recipes.subtitle')}
+            </span>
+            {/if}
+        </header>
+
+        <div class="recipes-extras-container">
+            {if $Site->getAttribute('quiqqer.recipes.time')}
+            <div class="recipes-extras">
+                <span class="fa fa-clock-o"></span>
+                <span>{locale group="quiqqer/recipes" var="site.table.settings.recipes.time.frontend"}:</span>
+                {$Site->getAttribute('quiqqer.recipes.time')}
+            </div>
+            {/if}
+            {if $Site->getAttribute('quiqqer.recipes.serves')}
+            <div class="recipes-extras">
+                <span class="fa fa-cutlery"></span>
+                <span>{locale group="quiqqer/recipes" var="site.table.settings.recipes.serves"}:</span>
+                {$Site->getAttribute('quiqqer.recipes.serves')}
+            </div>
+            {/if}
+            {if $Site->getAttribute('quiqqer.recipes.extraInfo')}
+            <div class="recipes-extras">
+                <span class="fa fa-info-circle"></span>
+                {$Site->getAttribute('quiqqer.recipes.extraInfo')}
+            </div>
+            {/if}
+        </div>
+
+        {if $Site->getAttribute('quiqqer.recipes.ingredients')}
+        <h3 class="recipes-header">
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.ingredients"}
+        </h3>
+        <p>
+            {$Site->getAttribute('quiqqer.recipes.ingredients')|nl2br}
+        </p>
+        {/if}
+
+        {if $Site->getAttribute('quiqqer.recipes.preparation')}
+        <h3 class="recipes-header">
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.preparation"}
+        </h3>
+        <p class="recipes-notes">
+            {$Site->getAttribute('quiqqer.recipes.preparation')|nl2br}
+        </p>
+        {/if}
+
+        {if $Site->getAttribute('quiqqer.recipes.notes')}
+        <h3 class="recipes-header">
+            {locale group="quiqqer/recipes" var="site.table.settings.recipes.notes"}
+        </h3>
+        <p class="recipes-notes">
+            {$Site->getAttribute('quiqqer.recipes.notes')|nl2br}
+        </p>
+        {/if}
+
+    </section>
+    {/if}
+
+    {sibling site=$Site type="next" assign=NextSibling}
+    {sibling site=$Site type="prev" assign=PrevSibling}
+
+    <aside>
+        {if $PrevSibling}
+        <a href="{url site=$PrevSibling}" class="blog-entry-prev button"
+           title="{$PrevSibling->getAttribute('title')|escape:"html"}"
+        >
+            {t}quiqqer/blog entry.blog.prev{/t}
+        </a>
+        {/if}
+
+        {if $NextSibling}
+        <a href="{url site=$NextSibling}" class="blog-entry-next button"
+           title="{$NextSibling->getAttribute('title')|escape:"html"}"
+        >
+            {t}quiqqer/blog entry.blog.next{/t}
+        </a>
+        {/if}
+    </aside>
+
+</article>
+
+{if $comments}
+    {if $type == "disqus"}
+    <div id="disqus_thread" class="content-body"></div>
+    <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES:
+        *  EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
+        *  https://disqus.com/admin/universalcode/#configuration-variables
+        */
+
+        var disqus_config = function () {
+            this.page.url = '{$url}';
+            this.page.identifier = '{$pageIdentifier}';
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '{$disqusLink}';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    {/if}
+
+    {if $type == "facebook"}
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js,
+              fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+
+          js     = d.createElement(s);
+          js.id  = id;
+          js.src = "//connect.facebook.net/{$fbLangParam}/sdk.js#xfbml=1&version=v2.8&appId={$appId}";
+
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="fb-comments"
+             data-href="{$url}"
+             data-numposts="{$numberOfPosts}"
+             data-width="100%">
+         </div>
+    {/if}
+
+{/if}
