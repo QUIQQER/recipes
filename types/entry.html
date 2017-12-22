@@ -34,12 +34,6 @@
 
     </section>
 
-    {*if $Site->getAttribute('image_emotion')}
-    <header class="recipes-image">
-        {image src=$Site->getAttribute('image_emotion') class="header-img"
-                    title=$Site->getAttribute('title')}
-    </header>
-    {/if*}
 
     {if $Site->getAttribute('content')}
     <section class="content-body recipes-entry-content grid-100 mobile-grid-100 grid-parent"
@@ -132,7 +126,7 @@
         <a href="{url site=$PrevSibling}" class="blog-entry-prev button"
            title="{$PrevSibling->getAttribute('title')|escape:"html"}"
         >
-            {t}quiqqer/blog entry.blog.prev{/t}
+            {t}quiqqer/recipes recipes.blog.prev{/t}
         </a>
         {/if}
 
@@ -140,7 +134,7 @@
         <a href="{url site=$NextSibling}" class="blog-entry-next button"
            title="{$NextSibling->getAttribute('title')|escape:"html"}"
         >
-            {t}quiqqer/blog entry.blog.next{/t}
+            {t}quiqqer/recipes recipes.blog.next{/t}
         </a>
         {/if}
     </aside>
