@@ -3,16 +3,17 @@
 
     <!-- schlechte Lösung -->
     <!-- wenn es Zeit gibt, dann kann man das in neuer Version besser machen -->
-    <attribute>quiqqer.recipes.title</attribute>
-    <attribute>quiqqer.recipes.subtitle</attribute>
-    <attribute>quiqqer.recipes.img</attribute>
-    <attribute>quiqqer.recipes.time</attribute>
-    <attribute>quiqqer.recipes.serves</attribute>
-    <attribute>quiqqer.recipes.extraInfo</attribute>
-    <attribute>quiqqer.recipes.ingredients</attribute>
-    <attribute>quiqqer.recipes.preparation</attribute>
-    <attribute>quiqqer.recipes.notes</attribute>
-
+    <attributes>
+        <attribute>quiqqer.recipes.title</attribute>
+        <attribute>quiqqer.recipes.subtitle</attribute>
+        <attribute>quiqqer.recipes.img</attribute>
+        <attribute>quiqqer.recipes.time</attribute>
+        <attribute>quiqqer.recipes.serves</attribute>
+        <attribute>quiqqer.recipes.extraInfo</attribute>
+        <attribute>quiqqer.recipes.ingredients</attribute>
+        <attribute>quiqqer.recipes.preparation</attribute>
+        <attribute>quiqqer.recipes.notes</attribute>
+    </attributes>
     <!-- extend every panel -->
     <!-- schlechte Lösung -->
     <!-- wenn es Zeit gibt, dann kann man das in neuer Version besser machen -->
@@ -28,59 +29,59 @@
 
     <types>
         <type type="types/entry" icon="icon-book">
-            <locale group="quiqqer/recipes" var="admin.types.recipes.entry" />
+            <locale group="quiqqer/recipes" var="admin.types.recipes.entry"/>
             <desc>
-                <locale group="quiqqer/recipes" var="admin.types.recipes.entry.desc" />
+                <locale group="quiqqer/recipes" var="admin.types.recipes.entry.desc"/>
             </desc>
 
             <attributes>
-                <attribute default="enable">quiqqer.settings.blog.entry.comments</attribute>
-                <attribute default="1">quiqqer.settings.blog.entry.dateAndCreator</attribute>
+                <attribute default="1">recipes.entry.dateAndCreator</attribute>
+                <attribute default="enable">recipes.entry.comments</attribute>
             </attributes>
 
             <settings>
-                <category name="blog-entry-settings">
+                <category name="recipes-entry-settings">
                     <settings>
                         <title>
-                            <locale group="quiqqer/blog" var="quiqqer.blog.entry.settings.title" />
+                            <locale group="quiqqer/recipes" var="quiqqer.blog.entry.settings.title"/>
                         </title>
 
-                        <select conf="quiqqer.settings.blog.entry.comments">
+                        <select conf="recipes.entry.comments">
                             <text>
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.comments" />
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.comments"/>
                             </text>
                             <option value="enable">
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.comments.enable" />
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.comments.enable"/>
                             </option>
                             <option value="disable">
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.comments.disable" />
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.comments.disable"/>
                             </option>
                         </select>
 
-                        <select conf="quiqqer.settings.blog.entry.dateAndCreator">
+                        <select conf="recipes.entry.dateAndCreator">
                             <text>
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.dateAndCreator" />
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.dateAndCreator"/>
                             </text>
 
                             <option value="showAll">
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.dateAndCreator.showAll"/>
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.dateAndCreator.showAll"/>
                             </option>
                             <option value="showCreator">
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.dateAndCreator.showCreator"/>
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.dateAndCreator.showCreator"/>
                             </option>
                             <option value="showDate">
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.dateAndCreator.showDate"/>
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.dateAndCreator.showDate"/>
                             </option>
                             <option value="hide">
-                                <locale group="quiqqer/blog"
-                                        var="quiqqer.settings.blog.entry.dateAndCreator.hide"/>
+                                <locale group="quiqqer/recipes"
+                                        var="recipes.entry.dateAndCreator.hide"/>
                             </option>
                         </select>
 
