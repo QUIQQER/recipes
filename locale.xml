@@ -3,9 +3,9 @@
     <groups name="quiqqer/recipes" datatype="php,js">
 
         <locale name="package.title">
-            <de><![CDATA[QUIQQER - Rezepte]]></de>
-            <en><![CDATA[QUIQQER - Recipes]]></en>
-            <pl><![CDATA[QUIQQER - Recepty]]></pl>
+            <de><![CDATA[Rezepte]]></de>
+            <en><![CDATA[Recipes]]></en>
+            <pl><![CDATA[Recepty]]></pl>
         </locale>
         <locale name="package.description">
             <de><![CDATA[Der Rezepten-Plugin ermöglichst Ihnen auf einfache Art und Weise Ihre Koch-Idee im Internet zu präsentieren.]]></de>
@@ -34,7 +34,6 @@
             <en><![CDATA[Page type to display the saved recipe under the actual content.]]></en>
             <pl><![CDATA[Typ strony, który umożliwia wyświetlenie recepty pod główną treścią strony.]]></pl>
         </locale>
-
 
 
         <locale name="site.panel.category.title">
