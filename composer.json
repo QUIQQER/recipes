@@ -1,31 +1,28 @@
 {
-    "name" : "quiqqer/recipes",
-    "type" : "quiqqer-module",
-    "description" : "QUIQQER extension for managing your recipes.",
-    "version" : "dev-dev",
-    "license" : "CC BY 3.0",
-
-    "authors" : [{
-        "name": "Michael Danielczok",
-        "email": "michael@pcsg.de",
-        "homepage": "http://www.pcsg.de",
-        "role": "Developer"
-    }],
-
-    "support" : {
+    "name": "quiqqer\/recipes",
+    "type": "quiqqer-module",
+    "description": "QUIQQER extension for managing your recipes.",
+    "license": "CC BY 3.0",
+    "authors": [
+        {
+            "name": "Michael Danielczok",
+            "email": "michael@pcsg.de",
+            "homepage": "http:\/\/www.pcsg.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
         "email": "support@pcsg.de",
-        "url": "http://www.pcsg.de"
+        "url": "http:\/\/www.pcsg.de"
     },
-
     "require": {
         "quiqqer\/quiqqer": ">=1.1|dev-master|dev-dev",
         "quiqqer\/fontawesome": "4.*|dev-master|dev-dev",
         "quiqqer\/unsemantic": "1.*|dev-master|dev-dev"
     },
-
     "autoload": {
-        "psr-4" : {
-            "QUI\\Recipes\\" : "src/QUI/Recipes"
+        "psr-4": {
+            "QUI\\Recipes\\": "src\/QUI\/Recipes"
         }
     }
 }
